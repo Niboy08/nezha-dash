@@ -16,6 +16,27 @@ export default function MainLayout({ children }: DashboardProps) {
         <AuthProtected>{children}</AuthProtected>
         <Footer />
       </main>
+ {/* 调整外部脚本加载策略 */}
+      <Script
+        src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua@master/js/yinghua.js"
+        strategy="lazyOnload" // 页面加载完成后执行
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua@master/js/aixin.js"
+        strategy="lazyOnload"
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua@master/js/xiaoxingxing.js"
+        strategy="lazyOnload"
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua@master/js/yanhuabowen.js"
+        strategy="lazyOnload"
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua@master/js/zhizhuwang.js"
+        strategy="lazyOnload"
+      />
     </div>
   )
 }
