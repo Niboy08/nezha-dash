@@ -32,12 +32,12 @@ export default function MainLayout({ children }: DashboardProps) {
         strategy="lazyOnload"
       />
       <Script
-        src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua@master/js/yanhuabowen.js"
-        strategy="lazyOnload"
-      />
-      <Script
         src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua@master/js/zhizhuwang.js"
         strategy="afterInteractive"
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua@master/js/yanhuabowen.js"
+        strategy="lazyOnload"
       />
     </div>
   )
