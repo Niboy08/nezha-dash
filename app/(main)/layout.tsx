@@ -37,7 +37,7 @@ export default function MainLayout({ children }: DashboardProps) {
       />
       <Script
         src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua@master/js/zhizhuwang.js"
-        strategy="lazyOnload"
+        strategy="afterInteractive"
       />
     </div>
   )
