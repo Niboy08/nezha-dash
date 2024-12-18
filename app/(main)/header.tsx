@@ -44,10 +44,10 @@ function Header() {
               className="relative m-0! border-2 border-transparent h-6 w-6 object-cover object-top p-0! hidden dark:block"
             />
           </div>
-          {customTitle ? customTitle : "NezhaDash"}
+          {customTitle ? customTitle : "Niboy"}
           <Separator orientation="vertical" className="mx-2 hidden h-4 w-[1px] md:block" />
           <p className="hidden text-sm font-medium opacity-40 md:block">
-            {customDescription ? customDescription : t("p_1079-1199_Simpleandbeautifuldashbo")}
+            {customDescription ? customDescription : t("做个无忧无虑~莫得感情的探针~~")}
           </p>
         </section>
         <section className="flex items-center gap-2">
