@@ -4,10 +4,12 @@ import { auth } from "@/auth"
 import { SignIn } from "@/components/SignIn"
 import getEnv from "@/lib/env-entry"
 import React from "react"
+import Script from "next/script"
 
 type DashboardProps = {
   children: React.ReactNode
 }
+
 export default function MainLayout({ children }: DashboardProps) {
   return (
     <div className="flex min-h-screen w-full flex-col">
@@ -16,7 +18,7 @@ export default function MainLayout({ children }: DashboardProps) {
         <AuthProtected>{children}</AuthProtected>
         <Footer />
       </main>
- {/* 调整外部脚本加载策略 */}
+      {/* 调整外部脚本加载策略 */}
       <Script
         src="https://cdn.jsdelivr.net/gh/mocchen/cssmeihua@master/js/yinghua.js"
         strategy="lazyOnload" // 页面加载完成后执行
