@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation"
 import React, { useEffect, useRef, useState } from "react"
 
 function Header() {
-  const t = useTranslations("Header")
+  const t = useTranslations(" ")
   const customLogo = getEnv("NEXT_PUBLIC_CustomLogo")
   const customTitle = getEnv("NEXT_PUBLIC_CustomTitle")
   const customDescription = getEnv("NEXT_PUBLIC_CustomDescription")
